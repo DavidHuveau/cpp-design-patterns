@@ -1,8 +1,8 @@
 #include <iostream>
 
 #include "menu.hpp"
-#include "Book.hpp"
-#include "InMemoryBookRepository.hpp"
+#include "Repository/Book.hpp"
+#include "Repository/InMemoryBookRepository.hpp"
 
 using namespace std;
 

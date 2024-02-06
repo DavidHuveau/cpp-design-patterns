@@ -33,6 +33,7 @@
                 "-stdlib=libc++",
                 "-g",
                 "-Wall",
+                "Repository/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"

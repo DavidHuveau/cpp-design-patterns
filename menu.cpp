@@ -5,6 +5,6 @@
 using namespace std;
 
 void showMenu(short int& choiceNumber) {
-  cout << "1 - Test" << endl;
+  cout << "1 - Repository" << endl;
   cin >> choiceNumber;
 }
