@@ -34,6 +34,7 @@
                 "-g",
                 "-Wall",
                 "Repository/*.cpp",
+                "Strategy/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"
