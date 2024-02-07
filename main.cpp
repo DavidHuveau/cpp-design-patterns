@@ -3,8 +3,10 @@
 #include "menu.hpp"
 #include "Repository/Book.hpp"
 #include "Repository/InMemoryBookRepository.hpp"
+#include "Strategy/ShapeInterface.hpp"
 #include "Strategy/Rectangle.hpp"
 #include "Strategy/Square.hpp"
+#include "Strategy/AreaCalculator.hpp"
 
 using namespace std;
 
@@ -22,10 +24,14 @@ int main() {
   }
   case 2: {
     Rectangle table(10, 20);
-    cout << table.area() << endl;
+    cout << "table :" << table.area() << endl;
 
     Square chair(10);
-    cout << chair.area() << endl;
+    cout << "chair :" << chair.area() << endl;
+
+    vector<ShapeInterface*> shapes = {&table, &chair};
+    AreaCalculator calculator(shapes);
+    cout << "total :" << calculator.sum() << endl;
     break;
   }
   }
