@@ -6,6 +6,9 @@
 #include "Strategy/ReportGenerator.hpp"
 #include "Strategy/HTMLFormatter.hpp"
 #include "Strategy/PlainTextFormatter.hpp"
+#include "Adapter/PrinterAdapter.hpp"
+#include "Adapter/clientCode.hpp"
+#include "Adapter/NewPrinter.hpp"
 
 using namespace std;
 
@@ -30,6 +33,15 @@ int main() {
     HTMLFormatter htmlFormatter;
     report1.set_formatter(&htmlFormatter);
     report1.output_report();
+    break;
+  }
+  case 3: {
+    NewPrinter newPrinter;
+    clientCode(newPrinter);
+    cout << endl;
+
+    PrinterAdapter printerAdapter;
+    clientCode(printerAdapter);
     break;
   }
   }
