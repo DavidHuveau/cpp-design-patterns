@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Book::Book(string author, string title): m_author(author), m_title(title) {
+Book::Book(const string author, const string title): m_author(author), m_title(title) {
 }
 
 string Book::getAuthor() const {

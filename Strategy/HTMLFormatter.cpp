@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void HTMLFormatter::output_report(string title, vector<string> text) const {
+void HTMLFormatter::output_report(const string title, const vector<string> text) const {
   cout << "<html>" << endl;
   cout << " <head>" << endl;
   cout << "<title>" << title << "</title>" << endl;

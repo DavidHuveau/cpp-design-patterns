@@ -8,7 +8,7 @@
 
 class PlainTextFormatter : public FormatterInterface {
 public:
-  void output_report(std::string title, std::vector<std::string> text) const override;
+  void output_report(const std::string title, const std::vector<std::string> text) const override;
 };
 
 #endif  // PLAIN_TEXT_FORMATTER_HPP_INCLUDED

@@ -6,8 +6,7 @@
 
 class FormatterInterface {
 public:
-  // virtual void output_report(const std::string title, const std::vector<std::string> text) const = 0;
-  virtual void output_report(std::string title, std::vector<std::string> text) const = 0;
+  virtual void output_report(const std::string title, const std::vector<std::string> text) const = 0;
 };
 
 #endif  // FORMATTER_INTERFACE_HPP_INCLUDED
