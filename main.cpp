@@ -3,10 +3,9 @@
 #include "menu.hpp"
 #include "Repository/Book.hpp"
 #include "Repository/InMemoryBookRepository.hpp"
-#include "Strategy/ShapeInterface.hpp"
-#include "Strategy/Rectangle.hpp"
-#include "Strategy/Square.hpp"
-#include "Strategy/AreaCalculator.hpp"
+#include "Strategy/ReportGenerator.hpp"
+#include "Strategy/HTMLFormatter.hpp"
+#include "Strategy/PlainTextFormatter.hpp"
 
 using namespace std;
 
@@ -23,15 +22,14 @@ int main() {
     break;
   }
   case 2: {
-    Rectangle table(10, 20);
-    cout << "table :" << table.area() << endl;
+    PlainTextFormatter plainTextFormatter;
+    ReportGenerator report1(&plainTextFormatter);
+    report1.output_report();
+    cout << endl;
 
-    Square chair(10);
-    cout << "chair :" << chair.area() << endl;
-
-    vector<ShapeInterface*> shapes = {&table, &chair};
-    AreaCalculator calculator(shapes);
-    cout << "total :" << calculator.sum() << endl;
+    HTMLFormatter htmlFormatter;
+    report1.set_formatter(&htmlFormatter);
+    report1.output_report();
     break;
   }
   }
