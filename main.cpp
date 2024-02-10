@@ -7,7 +7,7 @@
 #include "Strategy/HTMLFormatter.hpp"
 #include "Strategy/PlainTextFormatter.hpp"
 #include "Adapter/PrinterAdapter.hpp"
-#include "Adapter/clientCode.hpp"
+#include "Adapter/adapterClientCode.hpp"
 #include "Adapter/NewPrinter.hpp"
 
 using namespace std;
@@ -37,11 +37,11 @@ int main() {
   }
   case 3: {
     NewPrinter newPrinter;
-    clientCode(newPrinter);
+    adapterClientCode(newPrinter);
     cout << endl;
 
     PrinterAdapter printerAdapter;
-    clientCode(printerAdapter);
+    adapterClientCode(printerAdapter);
     break;
   }
   }

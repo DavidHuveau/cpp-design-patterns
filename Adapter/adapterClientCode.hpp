@@ -3,6 +3,6 @@
 
 #include "PrinterInterface.hpp"
 
-void clientCode(PrinterInterface& printer);
+void adapterClientCode(PrinterInterface& printer);
 
 #endif  // CLIENT_CODE_HPP_INCLUDED
