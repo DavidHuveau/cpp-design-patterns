@@ -9,6 +9,9 @@
 #include "Adapter/PrinterAdapter.hpp"
 #include "Adapter/adapterClientCode.hpp"
 #include "Adapter/NewPrinter.hpp"
+#include "AbstractFactory/abstractFactoryClientCode.hpp"
+#include "AbstractFactory/MacFactory.hpp"
+#include "AbstractFactory/WinFactory.hpp"
 
 using namespace std;
 
@@ -42,6 +45,14 @@ int main() {
 
     PrinterAdapter printerAdapter;
     adapterClientCode(printerAdapter);
+    break;
+  }
+  case 4: {
+    MacFactory macFactory;
+    abstractFactoryClientCode(macFactory);
+    cout << endl;
+    WinFactory winFactory;
+    abstractFactoryClientCode(winFactory);
     break;
   }
   }

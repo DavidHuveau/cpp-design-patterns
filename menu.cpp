@@ -8,5 +8,6 @@ void showMenu(short int& choiceNumber) {
   cout << "1 - Repository" << endl;
   cout << "2 - Strategy" << endl;
   cout << "3 - Adapter" << endl;
+  cout << "4 - Abstract Factory" << endl;
   cin >> choiceNumber;
 }
