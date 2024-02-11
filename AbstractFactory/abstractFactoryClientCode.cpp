@@ -9,7 +9,4 @@ void abstractFactoryClientCode(GUIFactoryInterface& factory) {
 
   button->paint();
   checkbox->paint();
-
-  delete button;
-  delete checkbox;
 };
