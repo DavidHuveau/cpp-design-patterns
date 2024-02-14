@@ -1,6 +1,4 @@
 #include "MacFactory.hpp"
-#include "ButtonInterface.hpp"
-#include "CheckboxInterface.hpp"
 #include "MacButton.hpp"
 #include "MacCheckbox.hpp"
 

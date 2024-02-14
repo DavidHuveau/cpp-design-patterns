@@ -1,5 +1,4 @@
 #include "abstractFactoryClientCode.hpp"
-#include "GUIFactoryInterface.hpp"
 #include "ButtonInterface.hpp"
 #include "CheckboxInterface.hpp"
 

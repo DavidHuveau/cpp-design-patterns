@@ -1,6 +1,4 @@
 #include "WinFactory.hpp"
-#include "ButtonInterface.hpp"
-#include "CheckboxInterface.hpp"
 #include "WinButton.hpp"
 #include "WinCheckbox.hpp"
 
