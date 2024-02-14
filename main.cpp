@@ -12,6 +12,9 @@
 #include "AbstractFactory/abstractFactoryClientCode.hpp"
 #include "AbstractFactory/MacFactory.hpp"
 #include "AbstractFactory/WinFactory.hpp"
+#include "FactoryMethod/TruckTransportCreator.hpp"
+#include "FactoryMethod/ShipTransportCreator.hpp"
+#include "FactoryMethod/factoryMethodClientCode.hpp"
 
 using namespace std;
 
@@ -53,6 +56,14 @@ int main() {
     cout << endl;
     WinFactory winFactory;
     abstractFactoryClientCode(winFactory);
+    break;
+  }
+  case 5: {
+    TruckTransportCreator truckTransportCreator;
+    factoryMethodClientCode(truckTransportCreator);
+    cout << endl;
+    ShipTransportCreator shipTransportCreator;
+    factoryMethodClientCode(shipTransportCreator);
     break;
   }
   }

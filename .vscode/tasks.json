@@ -37,6 +37,7 @@
                 "Strategy/*.cpp",
                 "Adapter/*.cpp",
                 "AbstractFactory/*.cpp",
+                "FactoryMethod/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"
