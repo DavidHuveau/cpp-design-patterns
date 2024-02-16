@@ -74,16 +74,15 @@ int main() {
     break;
   }
   case 6: {
-    MealBuilderInterface* builder = new RoyalBaconBuilder();
-    Cook cook(builder);
+    MealBuilderInterface* royalBaconBuilder = new RoyalBaconBuilder();
+    Cook cook(royalBaconBuilder);
     Meal* meal = cook.make();
     meal->display();
     cout << endl;
 
-    MealBuilderInterface* builder2 = new HappyMealBuilder();
-    // cook.changeBuilder(builder2);
-    Cook cook2(builder2);
-    Meal* meal2 = cook2.make();
+    MealBuilderInterface* happyMealBuilder = new HappyMealBuilder();
+    cook.changeBuilder(happyMealBuilder);
+    Meal* meal2 = cook.make();
     meal2->display();
 
     break;
