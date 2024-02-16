@@ -10,5 +10,6 @@ void showMenu(short int& choiceNumber) {
   cout << "3 - Adapter" << endl;
   cout << "4 - Abstract Factory" << endl;
   cout << "5 - Factory Method" << endl;
+  cout << "6 - Builder" << endl;
   cin >> choiceNumber;
 }

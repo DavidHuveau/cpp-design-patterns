@@ -38,6 +38,7 @@
                 "Adapter/*.cpp",
                 "AbstractFactory/*.cpp",
                 "FactoryMethod/*.cpp",
+                "Builder/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"
