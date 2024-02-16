@@ -21,5 +21,9 @@ void Meal::setToy(const string& toy) {
 };
 
 void Meal::display() const {
-  cout << "Meal consists of: " << m_burger << ", " << m_sideDish << ", " << m_drink << ", and " << m_toy << "." << endl;
+  cout << "Meal consists of: " << m_burger << ", " << m_sideDish << ", " << m_drink;
+  if (m_toy != "") {
+    cout << ", and " << m_toy;
+  }
+  cout << "." << endl;
 };
