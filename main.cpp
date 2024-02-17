@@ -76,7 +76,7 @@ int main() {
   case 6: {
     MealBuilderInterface* royalBaconBuilder = new RoyalBaconBuilder();
     Cook cook(royalBaconBuilder);
-    Meal* meal = cook.make();
+    Meal* meal = cook.make("with-supplement");
     meal->display();
     cout << endl;
 

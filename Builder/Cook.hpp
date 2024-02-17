@@ -6,8 +6,9 @@
 class Cook {
 public:
   Cook(MealBuilderInterface* builder);
-  Meal* make();
-  void changeBuilder(MealBuilderInterface* builder);
+  Meal* make(std::string const type = "");
+  void  changeBuilder(MealBuilderInterface* builder);
+
 private:
   MealBuilderInterface* m_builder;
 };
