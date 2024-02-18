@@ -15,13 +15,11 @@
 #include "FactoryMethod/TruckTransportCreator.hpp"
 #include "FactoryMethod/ShipTransportCreator.hpp"
 #include "FactoryMethod/factoryMethodClientCode.hpp"
-
-
 #include "Builder/Cook.hpp"
 #include "Builder/MealBuilderInterface.hpp"
 #include "Builder/RoyalBaconBuilder.hpp"
 #include "Builder/HappyMealBuilder.hpp"
-
+#include "Singleton/Singleton.hpp"
 
 using namespace std;
 
@@ -84,7 +82,15 @@ int main() {
     cook.changeBuilder(happyMealBuilder);
     Meal* meal2 = cook.make();
     meal2->display();
-
+    break;
+  }
+  case 7: {
+    Singleton* s1 = Singleton::getInstance(10);
+    s1->printUniqueID();
+    cout << "Memory location: " << s1 << endl;
+    Singleton* s2 = Singleton::getInstance(5);
+    s2->printUniqueID();
+    cout << "Memory location: " << s2 << endl;
     break;
   }
   }

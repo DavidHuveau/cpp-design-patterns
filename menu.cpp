@@ -11,5 +11,6 @@ void showMenu(short int& choiceNumber) {
   cout << "4 - Abstract Factory" << endl;
   cout << "5 - Factory Method" << endl;
   cout << "6 - Builder" << endl;
+  cout << "7 - Singleton" << endl;
   cin >> choiceNumber;
 }
