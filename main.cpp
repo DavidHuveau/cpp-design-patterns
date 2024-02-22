@@ -20,6 +20,7 @@
 #include "Builder/RoyalBaconBuilder.hpp"
 #include "Builder/HappyMealBuilder.hpp"
 #include "Singleton/Singleton.hpp"
+#include "Prototype/prototypeClientCode.hpp"
 
 using namespace std;
 
@@ -91,6 +92,10 @@ int main() {
     Singleton* s2 = Singleton::getInstance(5);
     s2->printUniqueID();
     cout << "Memory location: " << s2 << endl;
+    break;
+  }
+  case 8: {
+    prototypeClientCode();
     break;
   }
   }

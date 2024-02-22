@@ -40,6 +40,7 @@
                 "FactoryMethod/*.cpp",
                 "Builder/*.cpp",
                 "Singleton/*.cpp",
+                "Prototype/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"
