@@ -21,6 +21,9 @@
 #include "Builder/HappyMealBuilder.hpp"
 #include "Singleton/Singleton.hpp"
 #include "Prototype/prototypeClientCode.hpp"
+#include "Bridge/Chair.hpp"
+#include "Bridge/Wood.hpp"
+#include "Bridge/Metal.hpp"
 
 using namespace std;
 
@@ -96,6 +99,16 @@ int main() {
   }
   case 8: {
     prototypeClientCode();
+    break;
+  }
+  case 9: {
+    Wood* woodMaterial = new Wood();
+    Chair wooddenChair(woodMaterial);
+    wooddenChair.produce();
+
+    Metal* metalMaterial = new Metal();
+    Chair metalChair(metalMaterial);
+    metalChair.produce();
     break;
   }
   }

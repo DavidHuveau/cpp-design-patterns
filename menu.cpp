@@ -13,5 +13,6 @@ void showMenu(short int& choiceNumber) {
   cout << "6 - Builder" << endl;
   cout << "7 - Singleton" << endl;
   cout << "8 - Prototype" << endl;
+  cout << "9 - Bridge" << endl;
   cin >> choiceNumber;
 }
