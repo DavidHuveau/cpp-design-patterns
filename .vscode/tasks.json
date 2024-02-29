@@ -42,6 +42,7 @@
                 "Singleton/*.cpp",
                 "Prototype/*.cpp",
                 "Bridge/*.cpp",
+                "Composite/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"

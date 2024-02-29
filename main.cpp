@@ -24,6 +24,7 @@
 #include "Bridge/Chair.hpp"
 #include "Bridge/Wood.hpp"
 #include "Bridge/Metal.hpp"
+#include "Composite/compositeClientCode.hpp"
 
 using namespace std;
 
@@ -109,6 +110,10 @@ int main() {
     Metal* metalMaterial = new Metal();
     Chair metalChair(metalMaterial);
     metalChair.produce();
+    break;
+  }
+  case 10: {
+    compositeClientCode();
     break;
   }
   }
