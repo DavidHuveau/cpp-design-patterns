@@ -43,6 +43,7 @@
                 "Prototype/*.cpp",
                 "Bridge/*.cpp",
                 "Composite/*.cpp",
+                "Decorator/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"

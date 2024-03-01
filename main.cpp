@@ -25,6 +25,9 @@
 #include "Bridge/Wood.hpp"
 #include "Bridge/Metal.hpp"
 #include "Composite/compositeClientCode.hpp"
+#include "Decorator/SMSDecorator.hpp"
+#include "Decorator/FacebookDecorator.hpp"
+#include "Decorator/Notifier.hpp"
 
 using namespace std;
 
@@ -114,6 +117,14 @@ int main() {
   }
   case 10: {
     compositeClientCode();
+    break;
+  }
+  case 11: {
+    NotificationInterface* notifyStack = new Notifier();
+		notifyStack = new SMSDecorator(notifyStack);
+    notifyStack = new FacebookDecorator(notifyStack);
+    notifyStack->sendMessage("Hello Medium");
+
     break;
   }
   }
