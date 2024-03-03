@@ -28,6 +28,7 @@
 #include "Decorator/SMSDecorator.hpp"
 #include "Decorator/FacebookDecorator.hpp"
 #include "Decorator/Notifier.hpp"
+#include "Facade/facadeClientCode.hpp"
 
 using namespace std;
 
@@ -125,6 +126,10 @@ int main() {
     notifyStack = new FacebookDecorator(notifyStack);
     notifyStack->sendMessage("Hello Medium");
 
+    break;
+  }
+  case 12: {
+    facadeClientCode();
     break;
   }
   }

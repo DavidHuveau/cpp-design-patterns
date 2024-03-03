@@ -8,7 +8,7 @@ FacebookDecorator::FacebookDecorator(NotificationInterface* wrappee) : BaseDecor
 
 void FacebookDecorator::sendMessage(string message) const {
   BaseDecorator::sendMessage(message);
-  sendFacebook(message);
+  this->sendFacebook(message);
 };
 
 void FacebookDecorator::sendFacebook(string message) const {

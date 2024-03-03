@@ -8,7 +8,7 @@ SMSDecorator::SMSDecorator(NotificationInterface* wrappee) : BaseDecorator(wrapp
 
 void SMSDecorator::sendMessage(string message) const {
   BaseDecorator::sendMessage(message);
-  sendSMS(message);
+  this->sendSMS(message);
 };
 
 void SMSDecorator::sendSMS(string message) const {
