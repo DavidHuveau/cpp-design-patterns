@@ -29,6 +29,7 @@
 #include "Decorator/FacebookDecorator.hpp"
 #include "Decorator/Notifier.hpp"
 #include "Facade/facadeClientCode.hpp"
+#include "Flyweight/Forest.hpp"
 
 using namespace std;
 
@@ -130,6 +131,13 @@ int main() {
   }
   case 12: {
     facadeClientCode();
+    break;
+  }
+  case 13: {
+    Forest forest;
+    forest.plantTree("Oak", "Green", 10, 20);
+    forest.plantTree("Pine", "Blue", 30, 40);
+    forest.draw();
     break;
   }
   }
