@@ -18,5 +18,6 @@ void showMenu(short int& choiceNumber) {
   cout << "11 - Decorator" << endl;
   cout << "12 - Facade" << endl;
   cout << "13 - Flyweight" << endl;
+  cout << "14 - Proxy" << endl;
   cin >> choiceNumber;
 }

@@ -30,6 +30,8 @@
 #include "Decorator/Notifier.hpp"
 #include "Facade/facadeClientCode.hpp"
 #include "Flyweight/Forest.hpp"
+#include "Proxy/BankAccountInterface.hpp"
+#include "Proxy/BankAccountProxy.hpp"
 
 using namespace std;
 
@@ -138,6 +140,14 @@ int main() {
     forest.plantTree("Oak", "Green", 10, 20);
     forest.plantTree("Pine", "Blue", 30, 40);
     forest.draw();
+    break;
+  }
+  case 14: {
+    BankAccountInterface* account = new BankAccountProxy();
+    account->deposit(100);
+    account->withdraw(50);
+    account->withdraw(70); // Should print "Insufficient funds."
+    delete account;
     break;
   }
   }

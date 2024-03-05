@@ -46,6 +46,7 @@
                 "Decorator/*.cpp",
                 "Facade/*.cpp",
                 "Flyweight/*.cpp",
+                "Proxy/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"
