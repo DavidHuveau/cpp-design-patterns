@@ -33,6 +33,7 @@
 #include "Proxy/BankAccountInterface.hpp"
 #include "Proxy/BankAccountProxy.hpp"
 #include "ChainOfResponsibility/chainOfResponsibilityClientCode.hpp"
+#include "Command/commandClientCode.hpp"
 
 using namespace std;
 
@@ -153,6 +154,10 @@ int main() {
   }
   case 15: {
     createSuppportChain();
+    break;
+  }
+  case 16: {
+    controlAnElectronicDevice();
     break;
   }
   }

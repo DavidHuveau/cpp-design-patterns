@@ -1,0 +1,6 @@
+#ifndef COMMAND_CLIENT_CODE_HPP_INCLUDED
+#define COMMAND_CLIENT_CODE_HPP_INCLUDED
+
+void controlAnElectronicDevice();
+
+#endif  // COMMAND_CLIENT_CODE_HPP_INCLUDED
