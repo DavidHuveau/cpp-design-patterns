@@ -32,6 +32,7 @@
 #include "Flyweight/Forest.hpp"
 #include "Proxy/BankAccountInterface.hpp"
 #include "Proxy/BankAccountProxy.hpp"
+#include "ChainOfResponsibility/chainOfResponsibilityClientCode.hpp"
 
 using namespace std;
 
@@ -148,6 +149,10 @@ int main() {
     account->withdraw(50);
     account->withdraw(70); // Should print "Insufficient funds."
     delete account;
+    break;
+  }
+  case 15: {
+    createSuppportChain();
     break;
   }
   }

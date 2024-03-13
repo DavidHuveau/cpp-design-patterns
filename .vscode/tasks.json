@@ -47,6 +47,7 @@
                 "Facade/*.cpp",
                 "Flyweight/*.cpp",
                 "Proxy/*.cpp",
+                "ChainOfResponsibility/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"
