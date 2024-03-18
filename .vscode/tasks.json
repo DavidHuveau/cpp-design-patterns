@@ -49,6 +49,7 @@
                 "Proxy/*.cpp",
                 "ChainOfResponsibility/*.cpp",
                 "Command/*.cpp",
+                "Iterator/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"

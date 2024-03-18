@@ -1,0 +1,6 @@
+#ifndef ITERATOR_CLIENT_CODE_HPP_INCLUDED
+#define ITERATOR_CLIENT_CODE_HPP_INCLUDED
+
+void sendsMessagesToAllFacebookContacts();
+
+#endif  // ITERATOR_CLIENT_CODE_HPP_INCLUDED

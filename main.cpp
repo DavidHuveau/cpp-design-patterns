@@ -34,6 +34,7 @@
 #include "Proxy/BankAccountProxy.hpp"
 #include "ChainOfResponsibility/chainOfResponsibilityClientCode.hpp"
 #include "Command/commandClientCode.hpp"
+#include "Iterator/iteratorClientCode.hpp"
 
 using namespace std;
 
@@ -158,6 +159,10 @@ int main() {
   }
   case 16: {
     controlAnElectronicDevice();
+    break;
+  }
+  case 17: {
+    sendsMessagesToAllFacebookContacts();
     break;
   }
   }
