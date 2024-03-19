@@ -35,6 +35,7 @@
 #include "ChainOfResponsibility/chainOfResponsibilityClientCode.hpp"
 #include "Command/commandClientCode.hpp"
 #include "Iterator/iteratorClientCode.hpp"
+#include "Mediator/mediatorClientCode.hpp"
 
 using namespace std;
 
@@ -163,6 +164,10 @@ int main() {
   }
   case 17: {
     sendsMessagesToAllFacebookContacts();
+    break;
+  }
+  case 18: {
+    manageAirTraffic();
     break;
   }
   }

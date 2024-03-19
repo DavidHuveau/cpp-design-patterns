@@ -50,6 +50,7 @@
                 "ChainOfResponsibility/*.cpp",
                 "Command/*.cpp",
                 "Iterator/*.cpp",
+                "Mediator/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"
