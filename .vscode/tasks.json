@@ -51,6 +51,7 @@
                 "Command/*.cpp",
                 "Iterator/*.cpp",
                 "Mediator/*.cpp",
+                "Memento/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"

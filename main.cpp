@@ -36,6 +36,7 @@
 #include "Command/commandClientCode.hpp"
 #include "Iterator/iteratorClientCode.hpp"
 #include "Mediator/mediatorClientCode.hpp"
+#include "Memento/mementoClientCode.hpp"
 
 using namespace std;
 
@@ -168,6 +169,10 @@ int main() {
   }
   case 18: {
     manageAirTraffic();
+    break;
+  }
+  case 19: {
+    writeDocument();
     break;
   }
   }
