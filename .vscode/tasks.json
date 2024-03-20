@@ -52,6 +52,7 @@
                 "Iterator/*.cpp",
                 "Mediator/*.cpp",
                 "Memento/*.cpp",
+                "Observer/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"

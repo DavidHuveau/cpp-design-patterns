@@ -24,5 +24,6 @@ void showMenu(short int& choiceNumber) {
   cout << "17 - Iterator" << endl;
   cout << "18 - Mediator" << endl;
   cout << "19 - Memento" << endl;
+  cout << "20 - Observer" << endl;
   cin >> choiceNumber;
 }

@@ -37,6 +37,7 @@
 #include "Iterator/iteratorClientCode.hpp"
 #include "Mediator/mediatorClientCode.hpp"
 #include "Memento/mementoClientCode.hpp"
+#include "Observer/observerClientCode.hpp"
 
 using namespace std;
 
@@ -173,6 +174,10 @@ int main() {
   }
   case 19: {
     writeDocument();
+    break;
+  }
+  case 20: {
+    weatherStation();
     break;
   }
   }
