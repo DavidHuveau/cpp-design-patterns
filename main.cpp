@@ -39,6 +39,7 @@
 #include "Memento/mementoClientCode.hpp"
 #include "Observer/observerClientCode.hpp"
 #include "State/stateClientCode.hpp"
+#include "Template/TemplateClientCode.hpp"
 
 using namespace std;
 
@@ -183,6 +184,10 @@ int main() {
   }
   case 21: {
     testMediaPlayer();
+    break;
+  }
+  case 22: {
+    makeBeverage();
     break;
   }
   }

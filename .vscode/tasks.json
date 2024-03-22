@@ -54,6 +54,7 @@
                 "Memento/*.cpp",
                 "Observer/*.cpp",
                 "State/*.cpp",
+                "Template/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"
