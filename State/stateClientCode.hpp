@@ -1,0 +1,6 @@
+#ifndef STATE_CLIENT_CODE_HPP_INCLUDED
+#define STATE_CLIENT_CODE_HPP_INCLUDED
+
+void testMediaPlayer();
+
+#endif  // STATE_CLIENT_CODE_HPP_INCLUDED

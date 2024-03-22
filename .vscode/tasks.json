@@ -53,6 +53,7 @@
                 "Mediator/*.cpp",
                 "Memento/*.cpp",
                 "Observer/*.cpp",
+                "State/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"

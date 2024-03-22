@@ -38,6 +38,7 @@
 #include "Mediator/mediatorClientCode.hpp"
 #include "Memento/mementoClientCode.hpp"
 #include "Observer/observerClientCode.hpp"
+#include "State/stateClientCode.hpp"
 
 using namespace std;
 
@@ -178,6 +179,10 @@ int main() {
   }
   case 20: {
     weatherStation();
+    break;
+  }
+  case 21: {
+    testMediaPlayer();
     break;
   }
   }
