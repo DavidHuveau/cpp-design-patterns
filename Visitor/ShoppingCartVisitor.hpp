@@ -1,13 +1,12 @@
 #ifndef SHOPPING_CART_VISITOR_HPP_INCLUDED
 #define SHOPPING_CART_VISITOR_HPP_INCLUDED
 
-class Book;
-class Fruit;
+#include "VisitorInterface.hpp"
 
-class ShoppingCartVisitor {
+class ShoppingCartVisitor : public VisitorInterface {
 public:
-  virtual double visit(Book* book)   = 0;
-  virtual double visit(Fruit* fruit) = 0;
+  double visit(Book* book) override;
+  double visit(Fruit* fruit) override;
 };
 
 #endif  // SHOPPING_CART_VISITOR_HPP_INCLUDED

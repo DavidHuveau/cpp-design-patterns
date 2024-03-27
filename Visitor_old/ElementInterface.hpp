@@ -1,7 +1,6 @@
 // #ifndef ELEMENT_INTERFACE_HPP_INCLUDED
 // #define ELEMENT_INTERFACE_HPP_INCLUDED
 
-// // #include "VisitorInterface.hpp"
 // class VisitorInterface; // Advanced declaration to avoid circular dependency
 
 // class ElementInterface {

@@ -17,7 +17,7 @@
 //     cost = book->getPrice();
 //   }
 
-//   cout << "Book ISBN::" + book->getIsbnNumber() << " cost =" << cost << endl;
+//   cout << "Book ISBN::" + book->getIsbnNumber() << " cost = " << cost << endl;
 //   return cost;
 // };
 

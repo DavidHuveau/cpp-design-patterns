@@ -1,9 +1,6 @@
 // #ifndef VISITOR_INTERFACE_HPP_INCLUDED
 // #define VISITOR_INTERFACE_HPP_INCLUDED
 
-// // #include "Book.hpp"
-// // #include "Fruit.hpp"
-
 // class Book; // Advanced declaration to avoid circular dependency
 // class Fruit; // Advanced declaration to avoid circular dependency
 

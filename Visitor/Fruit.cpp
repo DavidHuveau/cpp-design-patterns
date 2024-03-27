@@ -2,7 +2,7 @@
 
 Fruit::Fruit(const std::string& name, double pricePerKg, double weight) : name(name), pricePerKg(pricePerKg), weight(weight) {};
 
-double Fruit::accept(ShoppingCartVisitor* visitor){
+double Fruit::accept(VisitorInterface* visitor){
   return visitor->visit(this);
 };
 

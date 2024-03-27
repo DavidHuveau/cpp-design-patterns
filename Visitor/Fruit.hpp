@@ -3,10 +3,10 @@
 
 #include <string>
 
-#include "Element.hpp"
-#include "ShoppingCartVisitor.hpp"
+#include "ElementInterface.hpp"
+#include "VisitorInterface.hpp"
 
-class Fruit : public Element {
+class Fruit : public ElementInterface {
 private:
   std::string name;
   double      pricePerKg;
@@ -14,7 +14,7 @@ private:
 
 public:
   Fruit(const std::string& name, double pricePerKg, double weight);
-  double      accept(ShoppingCartVisitor* visitor) override;
+  double      accept(VisitorInterface* visitor) override;
   std::string getName() const;
   double      getPricePerKg() const;
   double      getWeight() const;

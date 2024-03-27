@@ -3,17 +3,17 @@
 
 #include <string>
 
-#include "Element.hpp"
-#include "ShoppingCartVisitor.hpp"
+#include "ElementInterface.hpp"
+#include "VisitorInterface.hpp"
 
-class Book : public Element {
+class Book : public ElementInterface {
 private:
   std::string name;
   double      price;
 
 public:
   Book(const std::string& name, double price);
-  double      accept(ShoppingCartVisitor* visitor) override;
+  double      accept(VisitorInterface* visitor) override;
   std::string getName() const;
   double      getPrice() const;
 };
