@@ -1,19 +1,21 @@
 #include "Fruit.hpp"
 
-Fruit::Fruit(const std::string& name, double pricePerKg, double weight) : name(name), pricePerKg(pricePerKg), weight(weight) {};
+using namespace std;
+
+Fruit::Fruit(const string& name, double pricePerKg, double weight) : m_name(name), m_pricePerKg(pricePerKg), m_weight(weight) {};
 
 double Fruit::accept(VisitorInterface* visitor){
   return visitor->visit(this);
 };
 
-std::string Fruit::getName() const {
-  return name;
+string Fruit::getName() const {
+  return m_name;
 };
 
 double Fruit::getPricePerKg() const {
-  return pricePerKg;
+  return m_pricePerKg;
 };
 
 double Fruit::getWeight() const {
-  return weight;
+  return m_weight;
 };

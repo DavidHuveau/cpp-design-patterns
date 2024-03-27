@@ -8,6 +8,8 @@
 #include "VisitorInterface.hpp"
 #include "ShoppingCartVisitor.hpp"
 
+using namespace std;
+
 void calculateTheCart() {
   std::vector<ElementInterface*> items = {
       new Book("Book 1", 20.0),
@@ -23,7 +25,7 @@ void calculateTheCart() {
     NewFunction(totalPrice, item->accept(visitor));
   }
 
-  std::cout << "Total Price: " << totalPrice << std::endl;
+  cout << "Total Price: " << totalPrice << endl;
 }
 
 void NewFunction(double& totalPrice, double price) {

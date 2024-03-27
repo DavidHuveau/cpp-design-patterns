@@ -8,9 +8,9 @@
 
 class Fruit : public ElementInterface {
 private:
-  std::string name;
-  double      pricePerKg;
-  double      weight;
+  std::string m_name;
+  double      m_pricePerKg;
+  double      m_weight;
 
 public:
   Fruit(const std::string& name, double pricePerKg, double weight);

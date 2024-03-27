@@ -8,8 +8,8 @@
 
 class Book : public ElementInterface {
 private:
-  std::string name;
-  double      price;
+  std::string m_name;
+  double      m_price;
 
 public:
   Book(const std::string& name, double price);

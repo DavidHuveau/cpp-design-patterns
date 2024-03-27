@@ -1,15 +1,17 @@
 #include "Book.hpp"
 
-Book::Book(const std::string& name, double price) : name(name), price(price) {};
+using namespace std;
+
+Book::Book(const string& name, double price) : m_name(name), m_price(price) {};
 
 double Book::accept(VisitorInterface* visitor) {
   return visitor->visit(this);
 };
 
-std::string Book::getName() const {
-  return name;
+string Book::getName() const {
+  return m_name;
 };
 
 double Book::getPrice() const {
-  return price;
+  return m_price;
 };
