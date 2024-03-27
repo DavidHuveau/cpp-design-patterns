@@ -40,6 +40,7 @@
 #include "Observer/observerClientCode.hpp"
 #include "State/stateClientCode.hpp"
 #include "Template/TemplateClientCode.hpp"
+#include "Visitor/visitorClientCode.hpp"
 
 using namespace std;
 
@@ -188,6 +189,10 @@ int main() {
   }
   case 22: {
     makeBeverage();
+    break;
+  }
+  case 23: {
+    calculateTheCart();
     break;
   }
   }
