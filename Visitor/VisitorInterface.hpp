@@ -1,8 +1,8 @@
 #ifndef VISITOR_INTERFACE_HPP_INCLUDED
 #define VISITOR_INTERFACE_HPP_INCLUDED
 
-class Book; // Advanced declaration to avoid circular dependency
-class Fruit; // Advanced declaration to avoid circular dependency
+class Book;   // Advanced declaration to avoid circular dependency
+class Fruit;  // Advanced declaration to avoid circular dependency
 
 class VisitorInterface {
 public:

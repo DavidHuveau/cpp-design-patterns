@@ -4,7 +4,6 @@
 #include <string>
 
 #include "ElementInterface.hpp"
-#include "VisitorInterface.hpp"
 
 class Fruit : public ElementInterface {
 private:

@@ -1,10 +1,11 @@
 #include "Fruit.hpp"
+#include "VisitorInterface.hpp"
 
 using namespace std;
 
-Fruit::Fruit(const string& name, double pricePerKg, double weight) : m_name(name), m_pricePerKg(pricePerKg), m_weight(weight) {};
+Fruit::Fruit(const string& name, double pricePerKg, double weight) : m_name(name), m_pricePerKg(pricePerKg), m_weight(weight){};
 
-double Fruit::accept(VisitorInterface* visitor){
+double Fruit::accept(VisitorInterface* visitor) {
   return visitor->visit(this);
 };
 

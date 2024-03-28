@@ -1,9 +1,9 @@
 #include "ShoppingCartVisitor.hpp"
 
+#include <iostream>
+
 #include "Book.hpp"
 #include "Fruit.hpp"
-
-#include <iostream>
 
 using namespace std;
 
@@ -13,12 +13,12 @@ double ShoppingCartVisitor::visit(Book* book) {
   if (cost > 50.0) {
     cost -= 5.0;
   }
-  cout << "Book ISBN::" + book->getName() << " cost = " << cost << endl;
+  cout << "Book: " + book->getName() << " cost = " << cost << endl;
   return cost;
 }
 
 double ShoppingCartVisitor::visit(Fruit* fruit) {
   double cost = fruit->getPricePerKg() * fruit->getWeight();
-  cout << fruit->getName() << " cost = " << cost << endl;
+  cout << "Fruit: " << fruit->getName() << " cost = " << cost << endl;
   return cost;
 }

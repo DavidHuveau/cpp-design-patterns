@@ -1,6 +1,0 @@
-// #ifndef VISITOR_CLIENT_CODE_HPP_INCLUDED
-// #define VISITOR_CLIENT_CODE_HPP_INCLUDED
-
-// void calculateTheCart();
-
-// #endif  // VISITOR_CLIENT_CODE_HPP_INCLUDED
