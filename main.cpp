@@ -41,6 +41,7 @@
 #include "State/stateClientCode.hpp"
 #include "Template/TemplateClientCode.hpp"
 #include "Visitor/visitorClientCode.hpp"
+#include "Interpreter/interpreterClientCode.hpp"
 
 using namespace std;
 
@@ -193,6 +194,10 @@ int main() {
   }
   case 23: {
     calculateTheCart();
+    break;
+  }
+  case 24: {
+    parse();
     break;
   }
   }

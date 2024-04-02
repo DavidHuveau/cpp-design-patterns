@@ -28,5 +28,6 @@ void showMenu(short int& choiceNumber) {
   cout << "21 - State" << endl;
   cout << "22 - Template" << endl;
   cout << "23 - Visitor" << endl;
+  cout << "24 - Interpreter" << endl;
   cin >> choiceNumber;
 }

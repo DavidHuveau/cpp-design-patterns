@@ -56,6 +56,7 @@
                 "State/*.cpp",
                 "Template/*.cpp",
                 "Visitor/*.cpp",
+                "Interpreter/*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}/a.out"
